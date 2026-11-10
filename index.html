@@ -16,10 +16,18 @@
             <input type="email" id="email" name="email" required />
 
             <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" required />
+            <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    pattern="[A-Za-z ]+"
+                    title="Letters only"
+                    required
+                    />
 
             <label for="message">Message</label>
-            <textarea id="message" name="message" required ></textarea>
+            <textarea id="message" name="message" rows="5" cols="15" minlength="20" maxlength="150" required ></textarea>
+            <button type="submit">Submit</button>
         </fieldset>
     </form>
 </body>
